@@ -6,7 +6,7 @@ using HarmonyLib;
 
 namespace EternalHudSlotValue
 {
-    [BepInPlugin(Id, "EternalHUD Slot Value", "1.0")]
+    [BepInPlugin(Id, "EternalHUD Slot Value", "1.1")]
     [BepInDependency("eft.hiddenhiragi.eternalhud")]
     public sealed class Plugin : BaseUnityPlugin
     {

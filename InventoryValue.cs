@@ -50,10 +50,12 @@ namespace EternalHudSlotValue
                 if (item == null || !seen.Add(item))
                     continue;
 
-                if (item.StackObjectsCount > 0)
+                // A trader offer's root count is stock. Price one item and its contents.
+                int quantity = ReferenceEquals(item, root) ? 1 : item.StackObjectsCount;
+                if (quantity > 0)
                 {
                     if (prices.TryGetValue(item.StringTemplateId, out var row) && row.SellPrice > 0)
-                        sum += (decimal)row.SellPrice * item.StackObjectsCount;
+                        sum += (decimal)row.SellPrice * quantity;
                     else
                         missing++;
                 }
