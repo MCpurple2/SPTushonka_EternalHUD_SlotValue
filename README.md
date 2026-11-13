@@ -1,4 +1,5 @@
-An add-on for EternalHUD that displays item value per slot and total value. Code by GPT-6 Astra.
+An add-on for EternalHUD that displays item value per slot and total value. 
+Code made by GPT-6 Astra and tester is me (partly).
 
 ## Features
 
